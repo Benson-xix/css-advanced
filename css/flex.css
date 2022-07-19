@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ccc;
+    padding: 10px;
+    height: 1000px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items:center;
+
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.item {
+    background-color: #f1425d;
+    padding: 30px;
+    margin: 5px;
+    color: #fff;
+    font-size: 40px;
+
+
+  
+}
+
+.i2 {
+    height: 200px;
+   /*flex-basis:300px ;
+   flex-shrink: 0;*/
+   flex: 0 1 300px;
+}
+
+.i3{
+    order: 1;
+  flex: 1;
+}
+
+.i4 {
+ /*align-self: flex-end;*/
+ order: -1;
+}
+/*justify-content=space-between, space-around, space-evenly, center,flex-end, flex-start.
+align-items= center, flex-start, flex-end, stretch,baseline.
+flex-direction=row, row-reverse, column, column-reverse.
+align-self=flex-end, flex-start, stretch.
+align-content=flex-start, flex-end, centre, space-around, space-between, stretch.
+flex-wrap=wrap, reverse-wrap
+order
+flex-grow/flex
+flex-basis
+flex-shrink
+*/
